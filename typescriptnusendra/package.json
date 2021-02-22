@@ -1,0 +1,14 @@
+{
+  "name": "typescriptnusendra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "rm -rf build/ && tsc",
+    "ts": "rm -rf build/ && tsc -w",
+    "dev": "nodemon ./build/enum.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
+}
