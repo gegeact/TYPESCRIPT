@@ -17,3 +17,19 @@ function printName(): void {
 
 printName();
 
+//////////argument as type
+
+function multiply(val1: number, val2:number): number {
+    return val1 * val2;
+}
+
+const result = multiply(12, 5);
+console.log(result);
+
+///////// function as type
+
+type Tambah = (val1:number, val2:number)=> number;
+
+const Add: Tambah = (val1:number, val2:number); number => {
+    return val1 + val2;
+}
