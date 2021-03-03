@@ -28,8 +28,16 @@ console.log(result);
 
 ///////// function as type
 
-type Tambah = (val1:number, val2:number)=> number;
+// type Tambah = (val1: number, val2: number)=> number;
 
-const Add: Tambah = (val1:number, val2:number); number => {
-    return val1 + val2;
+// const Add: Tambah = (val1: number, val2: number); number => {
+//     return val1 + val2;
+// }
+
+
+//default parameter
+const fulName = (first:string, last:string = "gumelar"): string => {
+    return first + " " + last;
 }
+
+console.log(fulName("Nusendra","mrop"));

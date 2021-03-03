@@ -16,3 +16,9 @@ heroes = 20;
 heroes = [];
 heroes = {};
 heroes = true || false || "string";
+// union type
+837472748724;
+"0857872187123";
+var phone;
+phone = 628137637264;
+phone = "0857812386164";

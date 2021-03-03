@@ -17,7 +17,14 @@ function multiply(val1, val2) {
 }
 var result = multiply(12, 5);
 console.log(result);
-var Add = function (val1, val2) { return ; };
-(function (number) {
-    return val1 + val2;
-});
+///////// function as type
+// type Tambah = (val1: number, val2: number)=> number;
+// const Add: Tambah = (val1: number, val2: number); number => {
+//     return val1 + val2;
+// }
+//default parameter
+var fulName = function (first, last) {
+    if (last === void 0) { last = "gumelar"; }
+    return first + " " + last;
+};
+console.log(fulName("Nusendra", "mrop"));
