@@ -18,7 +18,7 @@ function multiply(val1, val2) {
 var result = multiply(12, 5);
 console.log(result);
 ///////// function as type
-// type Tambah = (val1: number, val2: number)=> number;
+// type Tambah = (val1: number, val2: number) => number;
 // const Add: Tambah = (val1: number, val2: number); number => {
 //     return val1 + val2;
 // }
@@ -28,3 +28,8 @@ var fulName = function (first, last) {
     return first + " " + last;
 };
 console.log(fulName("Nusendra", "mrop"));
+// optional parameter
+var getUmur = function (val1, val2) {
+    return val1 + " " + val2;
+};
+console.log(getUmur("A"));

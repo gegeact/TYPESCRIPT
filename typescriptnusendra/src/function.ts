@@ -28,7 +28,7 @@ console.log(result);
 
 ///////// function as type
 
-// type Tambah = (val1: number, val2: number)=> number;
+// type Tambah = (val1: number, val2: number) => number;
 
 // const Add: Tambah = (val1: number, val2: number); number => {
 //     return val1 + val2;
@@ -41,3 +41,11 @@ const fulName = (first:string, last:string = "gumelar"): string => {
 }
 
 console.log(fulName("Nusendra","mrop"));
+
+
+// optional parameter
+const getUmur = (val1: string, val2?: string): string => {
+    return val1 + " " + val2;
+}
+
+console.log(getUmur("A"));
