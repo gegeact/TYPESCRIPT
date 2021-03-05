@@ -24,6 +24,13 @@ export class User {
 class Admin  extends User {
     read: boolean = true;
     write: boolean = true;
+    phone: string;
+
+    constructor(phone: string, name: string, age: number) {
+        super(name, age);
+        this.name = phone;
+        
+    }
 
     getRole(): { read: boolean, write: boolean} {
         return {
@@ -33,7 +40,7 @@ class Admin  extends User {
     };
 }
 
-let admin = new Admin("gege", 25);
+let admin = new Admin("084747","gege", 25);
 admin.getName();
 admin.getRole();
 admin.setName("gege");
