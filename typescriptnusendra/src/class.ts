@@ -24,12 +24,18 @@ export class User {
 class Admin  extends User {
     read: boolean = true;
     write: boolean = true;
-    phone: string;
+    phone: string | undefined;
+    private _email:string = "";
+    static getRoleName: string = "Admin";
 
     constructor(phone: string, name: string, age: number) {
         super(name, age);
         this.name = phone;
         
+    }
+
+    static getNameRole() {
+        return "hey";
     }
 
     getRole(): { read: boolean, write: boolean} {
@@ -38,9 +44,32 @@ class Admin  extends User {
             write: this.write
         };
     };
+
+    set email(value: string) {
+        if(value.length < 5) {
+            this._email = "Email Salah"
+        } else {
+            this._email = value;
+        }
+        
+    }
+
+    get email(): string {
+        return this._email;
+    }
+
 }
 
-let admin = new Admin("084747","gege", 25);
-admin.getName();
-admin.getRole();
-admin.setName("gege");
+// let admin = new Admin("084747","gege", 25);
+// admin.getName();
+// admin.getRole();
+// admin.setName("gege");
+// admin.phone;
+
+// admin.email = 'wegewgfwgeg.com';
+// console.log(admin.email); 
+
+// karna email di private jadi ga bisa di akses dari luar, pasti eror
+
+let admin = Admin.getNameRole();
+console.log(admin);

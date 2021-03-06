@@ -13,7 +13,7 @@
 
 // string enums
 enum month {
-    JAN = "Januari",
+    JAN,
     FEB,
     MAR,
     APR,

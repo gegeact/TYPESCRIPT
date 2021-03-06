@@ -12,10 +12,10 @@
 // string enums
 var month;
 (function (month) {
-    month["JAN"] = "Januari";
-    month[month["FEB"] = void 0] = "FEB";
-    month[month["MAR"] = void 0] = "MAR";
-    month[month["APR"] = void 0] = "APR";
-    month[month["MAY"] = void 0] = "MAY";
+    month[month["JAN"] = 0] = "JAN";
+    month[month["FEB"] = 1] = "FEB";
+    month[month["MAR"] = 2] = "MAR";
+    month[month["APR"] = 3] = "APR";
+    month[month["MAY"] = 4] = "MAY";
 })(month || (month = {}));
 console.log(month);

@@ -9,4 +9,3 @@ array3 = [1, 'string', true, {}, "123456", "wduwdud"];
 // tuples
 var biodata;
 biodata = ["surabaya", 123];
-biodata = ;

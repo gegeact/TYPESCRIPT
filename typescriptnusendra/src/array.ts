@@ -11,4 +11,3 @@ array3 = [ 1, 'string', true, {}, "123456", "wduwdud"];
 // tuples
 let biodata: [string, number];
 biodata = ["surabaya", 123];
-biodata = 
