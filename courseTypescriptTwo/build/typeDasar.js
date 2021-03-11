@@ -16,3 +16,7 @@ heroes = 25;
 heroes = true;
 heroes = [];
 heroes = {};
+//union type
+var phone;
+phone = 6281234567;
+phone = "0812345656";
